@@ -26,7 +26,15 @@ public class GameManager : MonoBehaviour
     {
         float length = flag.transform.position.x - car.transform.position.x;
         distance.GetComponent<Text>().text = "距離目標還有 " + length.ToString("F2") + "m";
-      
+        float allscore = 100 / length;
+        if (length >= 0)
+        {
+            score.GetComponent<Text>().text = "分數 " + allscore.ToString("F0") + " 分";
+        }
+        else
+        {
+            score.GetComponent<Text>().text = "分數 0 分";
+        }
 
     }
 }
