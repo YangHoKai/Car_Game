@@ -17,7 +17,8 @@ public class GameManager : MonoBehaviour
         flag = GameObject.Find("flag");
         distance = GameObject.Find("Distance");
         score = GameObject.Find("Score");
-        Debug.Log("Hello World");
+
+
     }
 
     // Update is called once per frame
